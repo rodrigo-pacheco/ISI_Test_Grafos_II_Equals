@@ -1,13 +1,14 @@
 package equals;
 
-import static org.junit.jupiter.api.Assertions.*;
-
-import java.awt.List;
+import static org.junit.Assert.*;
 
 import org.junit.Before;
-import org.junit.jupiter.api.Test;
+import org.junit.Test;
 
-class equalsTest {
+import java.util.*;
+
+public class equalsTest {
+	
 	List<String> list1;
 	List<String> list2;
 
@@ -17,13 +18,11 @@ class equalsTest {
 		list2 = new ArrayList<String>();
 	}
 	
-	// Apartado 3 - Node Coverage
+	//	Node Coverage
 	
 	@Test
-	void test12() {
+	public void test12() {
 		assertTrue(list1.equals(list1));
 	}
-	
-	
 
 }
