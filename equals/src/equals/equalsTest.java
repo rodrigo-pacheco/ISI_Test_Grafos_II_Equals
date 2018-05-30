@@ -24,5 +24,10 @@ public class equalsTest {
 	public void test12() {
 		assertTrue(list1.equals(list1));
 	}
+	
+	@Test
+	public void test134() {
+		assertFalse(list1.equals(new Integer(0)));
+	}
 
 }
