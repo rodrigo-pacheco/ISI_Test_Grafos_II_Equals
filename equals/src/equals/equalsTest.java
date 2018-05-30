@@ -29,5 +29,12 @@ public class equalsTest {
 	public void test134() {
 		assertFalse(list1.equals(new Integer(0)));
 	}
+	
+	@Test
+	public void test135678() {
+		list1.add("a");
+		list2.add("b");
+		assertFalse(list1.equals(list2));
+	}
 
 }
