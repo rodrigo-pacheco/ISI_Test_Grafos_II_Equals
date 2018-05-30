@@ -48,5 +48,10 @@ public class equalsTest {
 		assertTrue(list1.equals(list2));
 	}
 	
-
+	// Edge-Pair Coverage
+	// Todos los Edge-Pair están cubiertos salvo el 5-6-7
+	@Test
+	public void test135610() {
+		assertTrue(list1.equals(list2));
+	}
 }
