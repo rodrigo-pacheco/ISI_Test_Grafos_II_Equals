@@ -36,5 +36,11 @@ public class equalsTest {
 		list2.add("b");
 		assertFalse(list1.equals(list2));
 	}
-
+	
+	@Test
+	public void test13561910() {
+		list1.add("Hola mundo");
+		list2.add("Hola mundo");
+		assertTrue(list1.equals(list2));
+	}
 }
